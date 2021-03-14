@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	background: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 65em;
+	text-align: center;
+}
+
+.space-small > * + * {
+	margin-top: 1.5rem;
+}
+
+.space-large > * + * {
+	margin-top: 3rem;
+}
+
+header {
+	background: rgb(221, 221, 221);
+	padding: 1em 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__link {
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav__item {
+	margin-right: 2em;
+}
+
+.nav__list--primary {
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.5em 1.25em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+main {
+	margin: 1em;
+}
+.column {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.column > * {
+	flex-basis: 100%;
+	flex: 1 1 20em;
+}
+
+p {
+	text-align: justify;
+}
+
+.text-example_1 {
+	font-size: 1.2rem;
+	color: red;
+}
+
+.text-example_2 {
+	font-size: 1.2rem;
+	border: 1px solid blue;
+	background: cadetblue;
+}
